@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 0 0.5em;
+    font-weight: bold;
+}
+
+body {
+    padding: 16px;
+    margin: 0;
+}
+
+.scheme {
+    background: aliceblue;
+}
+
+.barchart {
+    border-bottom: 1px solid bisque;
+}
+
+.meanline {
+    stroke-width: 0.4px;
+    stroke: black;
+    opacity: 0.6;
+}
+
+.meanvalue {
+    font-size: 10px;
+    text-anchor: start;
+}
+
+.hover {
+    opacity: 0.4;
+}
+
+.legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-bottom: 1em;
+    font-size: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+.button {
+    border-collapse: collapse;
+    margin-right: -1px;
+    border:1px solid #c4c4c4;
+}
+
+.button.radio_checked{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 5px inset;
+    background: #478BEC;
+    border: 1px solid rgb(53, 104, 177);
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.button:first-child {
+    margin-left: 0.5em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.button input {
+    display: none;
+}
+
+.button input[type=radio]:checked + label {
+    color: white !important;
+}
+
+.button label {
+    display: block;
+    padding: 0.15em 0.75em;
+}
+
+circle {
+    stroke: rgb(050, 50, 50);
+    fill: white;
+    opacity: 1;
+    stroke-width: 0.5px;
+}
+
+text {
+    font: 10px sans-serif;
+    font-weight: normal;
+    text-anchor: middle;
+    alignment-baseline: middle;
+}
+text tspan{
+    text-anchor: middle;
+    alignment-baseline: middle;
+}
+
+
+.overlay {
+    fill: white;
+}
+
+.node--root circle {
+    stroke: red !important;
+}
+
+.node--hover circle {
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+text {
+    stroke: none;
+}
+
+text.title {
+    font-size: 16px;
+}
+
+.circle_label {
+    font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+}
+
+.pack_container_max circle{
+    fill: #e4e4e4;
+    stroke: none;
+}
+
+.pack_container_max g:first-of-type circle{
+    fill: none;
+    pointer-events: none;
+}
+
+.hidden {
+    display: none;
+}
+
+div.circle_tooltip {
+    background-color: #fff;
+    padding: 8px;
+    text-shadow: #f5f5f5 0 1px 0;
+    font-size: 16px;
+    border-radius: 4px;
+    opacity: 0.8;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
+}
